@@ -2,7 +2,7 @@
 
 Fetch various system information, such as Journalctl logs, CPU and memory stats displayed through a web interface.
 
-## Example:
+## Example:
 
 ```dockerfile
 version: "2"
