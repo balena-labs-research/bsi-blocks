@@ -6,10 +6,12 @@ on:
     branches:
       - main
     paths:
-      - 'environment-variables/**'
+      - 'device-info/**'
+      - '.github/workflows/**'
 
 env:
   BALENA_APP: bdi/environment-variables
+  YML_PATH: environment-variables
 
 jobs:
   build:
@@ -19,9 +21,16 @@ jobs:
       - name: Checkout main branch
         uses: actions/checkout@v3
 
+      - name: Update balena.yml
+        uses: balena-io-experimental/balena.yml-action@main
+        with:
+          # Synchronise the GitHub README with the Balena Hub README
+          path: ${{ env.YML_PATH }}
+          sync_readme: true
+
       - name: Deploy to Balena
         uses: balena-io/deploy-to-balena-action@master
         with:
           balena_token: ${{ secrets.BSI_API_KEY }}
           fleet: ${{ env.BALENA_APP }}
-          source: environment-variables
+          source: ${{ env.YML_PATH }}
