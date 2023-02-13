@@ -1,0 +1,27 @@
+name: "Deploy system-info to balena"
+
+on:
+  pull_request:
+    types: [opened, synchronize, closed]
+    branches:
+      - main
+    paths:
+      - 'system-info/**'
+
+env:
+  BALENA_APP: bdi/system-info
+
+jobs:
+  build:
+    name: "Deploy-to-Balena"
+    runs-on: "ubuntu-latest"
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v3
+
+      - name: Deploy to Balena
+        uses: balena-io/deploy-to-balena-action@master
+        with:
+          balena_token: ${{ secrets.BSI_API_KEY }}
+          fleet: ${{ env.BALENA_APP }}
+          source: system-info
