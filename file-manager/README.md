@@ -2,7 +2,7 @@
 
 Provides a UI for uploading, modifying and removing files from a device.
 
-## Example:
+## Example:
 
 ```dockerfile
 version: "2"

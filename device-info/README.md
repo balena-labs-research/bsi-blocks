@@ -2,7 +2,7 @@
 
 This project provides a visual interface displaying basic device statistics.
 
-## Example:
+## Example:
 
 ```dockerfile
 version: "2"

@@ -2,7 +2,7 @@
 
 This project provides...
 
-## Example:
+## Example:
 
 ```dockerfile
 version: "2"

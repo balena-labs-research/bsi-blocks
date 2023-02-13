@@ -2,7 +2,7 @@
 
 Allows configuring on-device environment variables from a web interface.
 
-## Example:
+## Example:
 
 ```dockerfile
 version: "2"
