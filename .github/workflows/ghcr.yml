@@ -37,7 +37,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: ghcr.io/bsi-pwc-block
+          images: ghcr.io/balena-labs-research/bsi-pwc-block
           flavor: |
             latest=true
           tags: |
