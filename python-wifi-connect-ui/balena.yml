@@ -1,8 +1,8 @@
 name: Python-Wifi-Connect-UI
 description: >-
-  balena-Starter-Interface independent Block.
+  Provides the python-wifi-connect project with Captive Portal as an App.
 joinable: false
-post-provisioning: Provides the python-wifi-connect project as an independent block with Captive Portal.
+post-provisioning: Provides the python-wifi-connect project with Captive Portal as an App.
 type: sw.application
 assets:
   repository:
@@ -23,3 +23,5 @@ data:
     - raspberrypi4-64
     - intel-nuc
     - genericx86-64-ext
+  applicationEnvironmentVariables:
+    - PWC_HOTSPOT_SSID: Python WiFi-Connect
