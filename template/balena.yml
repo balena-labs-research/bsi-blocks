@@ -3,7 +3,7 @@ description: >-
   balena-Starter-Interface independent Block.
 joinable: false
 # By default post-provisioning is overwritten by the deploy-to-balena GitHub action to match README.md
-post-provisioning:  Provides the python-wifi-connect project as an independent block with Captive Portal.
+post-provisioning: Provides the python-wifi-connect project as an independent block with captive portal.
 type: sw.block
 assets:
   repository:
