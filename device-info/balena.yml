@@ -1,9 +1,9 @@
 name: Device-Info
 description: >-
-  balena-Starter-Interface independent Block.
+  Provides a visual interface displaying current device statistics such as CPU and memory.
 joinable: false
 # By default post-provisioning is overwritten by the deploy-to-balena GitHub action to match README.md
-post-provisioning: Provides a visual interface displaying basic device statistics.
+post-provisioning: Provides a visual interface displaying current device statistics such as CPU and memory.
 type: sw.block
 assets:
   repository:

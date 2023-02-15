@@ -1,6 +1,6 @@
 name: Environment-Variable-UI
 description: >-
-  balena-Starter-Interface independent Block.
+  Allows configuring device environment variables from a web interface by communicating with balena Cloud.
 joinable: false
 post-provisioning: Allows configuring on-device environment variables from a web interface.
 type: sw.block

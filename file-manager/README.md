@@ -1,6 +1,12 @@
 # File Manager
 
-Provides a UI for uploading, modifying and removing files from a device.
+<img width="1159" alt="file-manager" src="https://user-images.githubusercontent.com/64841595/219017075-65612229-1be4-4cd2-9e37-0a4724f7e41f.png">
+
+---
+
+Provides a UI for uploading, modifying and removing files from a volume.
+
+Replace the `bdi_storage` volume in the example Dockerfile below with the name of the volume you would like to be visible in the File Manager.
 
 ## Example:
 

@@ -1,6 +1,6 @@
 name: File Manager
 description: >-
-  balena-Starter-Interface independent Block.
+  Provides a UI for uploading, modifying and removing files from a device. 
 joinable: false
 # By default post-provisioning is overwritten by the deploy-to-balena GitHub action to match README.md
 post-provisioning: Provides a UI for uploading, modifying and removing files from a device. 
